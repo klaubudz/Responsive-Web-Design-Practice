@@ -1,0 +1,20 @@
+.btn--component {
+	.buttonReset();
+	cursor: pointer;
+	font-size: 25px;
+	letter-spacing: 5px;
+	line-height: 1.2em;
+	text-align: center;
+	padding: 9px 10px;
+	.borderRadius(5px);
+
+	&:hover, &:focus {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	&.-experts {
+		background-color: @experts;
+		color: @white;
+	}
+}

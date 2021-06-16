@@ -1,0 +1,50 @@
+.slick-slider {
+    /*box-shadow: inset 55px 0px 45px -20px rgba(255,0,0,1), inset -55px 0px 45px -20px rgba(255,0,0,1);*/
+}
+
+.slick-dots {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+/*    z-index: 998;*/
+
+    > li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 5px;
+
+        > button {
+            width: 15px;
+            height: 15px;
+            border: 2px solid @white;
+            background: Transparent;
+            display: block;
+            font: 0px/0px tahoma;
+            padding: 0;
+
+            .borderRadius(50%);
+            .transition(all, 0.5s);
+        }
+    }
+
+    > li.slick-active button {
+        background: @white;
+    }
+}
+
+@media (max-width: @screen-sm) {
+    .slick-dots {
+        bottom: 5px;
+
+        >li {
+            >button {
+                width: 10px;
+                height: 10px;
+            }   
+        }
+    }
+}

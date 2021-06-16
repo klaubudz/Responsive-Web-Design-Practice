@@ -1,0 +1,57 @@
+.main--footer {
+	background-color: @video--background;
+	/*line-height: 129px;*/
+	text-align: center;
+	padding: 60px 0;
+}
+
+.footer--list {
+	list-style-type: none;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+
+	font-size: 16px;
+	line-height: 25px;
+
+	>.element {
+		display: inline-block;
+		vertical-align: middle;
+        padding-right: 15px;
+        padding-left: 15px;
+	}
+}
+
+.footer--link {
+	color: @primary;
+
+	&:hover,
+    &:focus {
+        text-decoration: none;
+        color: @primary;
+    }
+}
+
+
+
+@media (max-width: @screen-sm) {		
+	.footer--list {
+		font-size: 14px;
+
+		>.element{
+			padding-right: 9px;
+			padding-left: 9px;
+		}
+	}
+}
+
+@media (max-width: @screen-xs) {		
+	.footer--list {
+		line-height: 40px;
+
+		>.element{
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+}

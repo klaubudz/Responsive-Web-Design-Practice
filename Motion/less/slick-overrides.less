@@ -1,0 +1,82 @@
+.slick-slider {
+    
+}
+
+/*========= Slick Arrows =================*/
+
+.slick-arrow {
+    .buttonReset();
+    .borderRadius(50%);
+    width: 38px;
+    height: 38px;
+    border: none;
+    background-color: @dark;
+    font-size: 36px;
+    line-height: 37px;
+    color: @white;
+    text-align: center;
+    outline: none;
+
+    >.arrow {
+        display: block;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+}
+
+.slick-prev {
+    float: left;
+}
+
+.slick-next {
+    float: right;
+
+}
+
+/*========= Slick Dots ===================*/
+
+.slick-dots {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+/*    z-index: 998;*/
+
+    > li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 5px;
+
+        > button {
+            .buttonReset();
+            width: 15px;
+            height: 15px;
+            background: @secondary;
+            display: block;
+            font: 0px/0px tahoma;
+
+            .borderRadius(50%);
+            .transition(all, 0.5s);
+        }
+    }
+
+    > li.slick-active button {
+        background: @experts;
+    }
+}
+
+@media (max-width: @screen-sm) {
+    .slick-dots {
+        bottom: 5px;
+
+        >li {
+            >button {
+                width: 10px;
+                height: 10px;
+            }   
+        }
+    }
+}

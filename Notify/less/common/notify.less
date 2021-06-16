@@ -1,0 +1,54 @@
+/*
+ *
+ * Notify colors
+ *
+ */
+@notify-success-bg: #419641; // bootstrap green
+@notify-success-txt: #ffffff;
+@notify-info-bg: #dce3e9;
+@notify-info-txt: #ffffff;
+@notify-warning-bg: #EB9316; // bootstrap yellow
+@notify-warning-txt: #ffffff;
+@notify-error-bg: #e0303b;;
+@notify-error-txt: #ffffff;
+@no: @notify-error-bg;
+@yes: @notify-success-bg;
+
+.notifyContainer {
+	position: fixed;
+	padding: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	top: 120px;
+	right: 40px;
+	z-index: 10001;
+	opacity: 0.8;
+	border-radius: 5px;
+	.boxShadow(0px 6px 6px 0px rgba(0, 0, 0, 0.14));
+	background-color: @notify-info-bg;
+	color: @notify-info-txt;	
+
+	&.alert-info {
+		background-color: @notify-info-bg;
+		color: @notify-info-txt;
+	}
+	&.alert-warning {
+		background-color: @notify-warning-bg;
+		color: @notify-warning-txt;
+	}
+  	&.error,
+	&.alert-error {
+		background-color: @no;
+		color: @notify-error-txt;
+	}
+	&.alert-success {
+		background-color: @yes;
+		color: @notify-success-txt;
+	}
+    a {
+      display: block;
+      color: #000;
+      margin: 10px 0 0;
+      text-align: center;
+    }
+}

@@ -1,0 +1,62 @@
+.footer--begins {
+	background-color: @dark;
+	line-height: 48px;
+}
+
+.footer--copyright {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 48px;
+}
+
+.span--color {
+	color: @primary;
+}
+
+.media--icon {
+	text-decoration: none;
+	color: @white;
+
+	float: right;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	margin: 10px 0 10px 8px;
+	background-color: @primary;
+	.borderRadius(5px);
+
+	&:hover, &:focus {
+		text-decoration: none;
+		color: @white;
+	}
+
+	&.icon {
+		text-align: center;
+		padding-top: 7px;
+	}
+}
+
+//---------Map section--------------
+
+.map--section {
+	position: relative;
+	
+	&#map {
+		height: 251px;
+		width: 100%;
+
+	}
+}
+
+.text--overlay {
+	position: absolute;
+
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	background-color: @dark;
+	opacity: 0.9; 
+
+	transform: translateY(-125%);
+}
+

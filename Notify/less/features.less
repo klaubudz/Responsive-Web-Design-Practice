@@ -1,0 +1,45 @@
+.feature--section {
+	text-align: center;
+	background-color: @white;
+	padding: 60px 0;
+}
+
+.features--column {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.feature--icon {
+	width: 100px;
+	height: 100px;
+	color: @white;
+	font-size: 43px;
+	background-color: @header--background;
+	.borderRadius(50%);
+
+	margin: 0 auto;
+
+	&:before {
+		vertical-align: middle;
+	    text-align: center;
+	    line-height: 100px;
+	}
+}
+
+
+
+@media (max-width: @screen-md) {		
+	.features--column {
+		padding-top: 10px;
+	}
+}
+/*
+@media (max-width: @screen-sm) {		
+	.feature--section {
+		padding: 40px 50px 40px 50px;
+	}
+}
+
+@media (max-width: @screen-xs) {		
+
+}*/

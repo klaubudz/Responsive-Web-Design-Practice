@@ -1,0 +1,137 @@
+body {
+	font-family: 'Arimo';
+}
+
+h3{
+    font-size: 24px;
+    color: @black;
+    font-weight: bold;
+
+    &.-light {
+        color: @white;
+    }
+
+    &.-paddingbottom{
+        padding-bottom: 20px;
+    }
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 18px;
+    color: @black;
+
+    &.-light {
+        color: @white;
+    }
+
+    &.-padding{
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        margin: 0;
+    }
+
+    &.-paddingtop{
+        padding-top: 20px;
+    }
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 20px;
+    color: @primary;
+
+    &.-dark {
+        color: @black;
+    }
+
+    &.-bold {
+        font-weight: bold;
+    }
+
+    &.-highline {
+        line-height: 30px;
+    }
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 26px;
+    color: @primary;  
+
+    &.-padding{
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        margin: 0;
+    }
+}
+
+
+
+
+@media (max-width: @screen-lg) {        
+    
+}
+
+@media (max-width: @screen-md-max) {     
+    h3 {
+        font-size: 22px;
+        margin-top: 10px;
+
+        &.-paddingbottom {
+            padding-bottom: 10px;
+        }
+    }
+
+    h4 {
+        &.-paddingtop {
+            padding-top: 10px;
+        }
+    }
+
+    h6 {
+        &.-padding {
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: @screen-sm) {        
+    h3 {
+        &.-nomarginsmall {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: @screen-xs) {       
+
+}
+
+
+
+
+/*
+@media (max-width: @screen-sm-max) {
+    h2, .header--h2 {
+        font-size: 32px;
+        line-height: 1.2;
+
+        &.-programpadding {
+            padding-bottom: 20px;
+        }
+    }
+    h3, .header--h3 {
+        font-size: 22px;
+
+        &.-programpadding {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+*/

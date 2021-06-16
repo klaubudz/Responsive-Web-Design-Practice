@@ -1,0 +1,53 @@
+.experts--section {
+	background-color: @experts;
+	text-align: center;
+}
+
+.expert--profile {
+	background-color: @white;
+	padding-top: 25px;
+	.borderRadius(5px);
+}
+
+.btn--follow {
+	padding: 30px 10px 15px;
+}
+
+.follow--link {	
+	cursor: pointer;						
+	font-size: 25px;
+	letter-spacing: 5px;
+	line-height: 1.2em;
+	text-align: center;
+	padding: 10px 60px;											
+	.borderRadius(5px);		
+
+	&.-experts {
+		background-color: @experts;
+		color: @white;
+	}						
+	&:hover, &:focus {
+		text-decoration: none;
+		color: inherit;
+	}	
+	&:before {
+		margin-left: -40px;
+		margin-right: 25px;
+	}
+
+	> h5 {
+		display: inline;
+		font-family: 'Ubuntu';
+	}			
+}
+
+.expert--photo {
+	width: 165px;
+	height: 165px;
+
+	margin: 0 auto;
+
+/*	border: 10px solid @experts;
+	.borderRadius(50%);*/
+	
+}
